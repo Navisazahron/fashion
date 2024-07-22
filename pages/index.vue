@@ -4,7 +4,7 @@
       <div class="new-collection-content">
         <div class="left-content">
           <h2>New Collection</h2>
-          <p>Discover our latest trends and exclusive items</p>
+          <p>Discover our latest collection with the best quality and affordable prices. Happy shopping!</p>
           <button class="shop-now-button" @click="shopNow">Shop Now</button>
         </div>
         <div class="right-content">
