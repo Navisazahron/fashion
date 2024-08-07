@@ -16,7 +16,7 @@
     <div class="collection-box">
       <div class="image-container">
         <div class="card">
-          <img src="/assets/product13.jpg" alt="Collection Item 1" class="card-img-top collection-image">
+          <img src="/assets/product6.jpg" alt="Collection Item 1" class="card-img-top collection-image">
           <div class="card-body">
             <button @click="viewCollection(1)" class="view-button">View</button>
           </div>
@@ -72,7 +72,22 @@
 
 <script>
 export default {
+  data() {
+    return {
+      dataprodukx: [],
+    };
+  },
+  mounted() {
+    this.getData();
+  },
   methods: {
+    async getData() {
+      try {
+        this.dataprodukx = await this.$fetch('http://localhost/fashion/products.php');
+      } catch (error) {
+        console.log(error);
+      }
+    },
     viewCollection(index) {
       console.log(`View collection ${index}`);
     },
@@ -82,6 +97,7 @@ export default {
   }
 }
 </script>
+
 
 <style scoped>
 

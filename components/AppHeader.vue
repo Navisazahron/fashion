@@ -10,7 +10,7 @@
             <NuxtLink class="nav-link" to="/profil">Profil</NuxtLink>
           </li>
           <li class="nav-item">
-            <NuxtLink class="nav-link" to="/produk">Produk</NuxtLink>
+            <NuxtLink class="nav-link" to="/produk/produk">Produk</NuxtLink>
           </li>
           <li class="nav-item">
             <NuxtLink class="nav-link" to="/kontak">Kontak</NuxtLink>
